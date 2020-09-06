@@ -1,4 +1,4 @@
-# from __future__ import print_function
+from __future__ import print_function
 # for i in range(1, 5):
 #     for j in range(1, 10):
 #         print(j, end='')
@@ -51,30 +51,38 @@
 #
 # print(time.localtime())
 
-import time
+# import time
+#
+#
+# class User:
+#     def __init__(self, firstname, lastname):
+#         self.fName = firstname
+#         self.lName = lastname
+#
+#     def greet(self, timeOfTheDay):
+#         print('Hello {0} {1}, Good {2}!'.format(self.fName, self.lName, timeOfTheDay))
+#
+#
+# class Customer(User):
+#     def __init__(self, fName, lName, projectName):
+#         self.fName = fName
+#         self.lName = lName
+#         self.project = projectName
+#
+#     def sayHello(self):
+#         print('Hello {0}, {1}. Thanks for your {2} project.'.format(self.fName, self.lName, self.project))
+#
+#
+# brett = Customer('Brett', 'Cohen', 'TicTac Shake 2.0')
+# brett.sayHello()
 
 
-class User:
-    def __init__(self, firstname, lastname):
-        self.fName = firstname
-        self.lName = lastname
-
-    def greet(self, timeOfTheDay):
-        print('Hello {0} {1}, Good {2}!'.format(self.fName, self.lName, timeOfTheDay))
-
-
-class Customer(User):
-    def __init__(self, fName, lName, projectName):
-        self.fName = fName
-        self.lName = lName
-        self.project = projectName
-
-    def sayHello(self):
-        print('Hello {0}, {1}. Thanks for your {2} project.'.format(self.fName, self.lName, self.project))
-
-
-brett = Customer('Brett', 'Cohen', 'TicTac Shake 2.0')
-brett.sayHello()
+for i in range(1, 6):
+    for k in range(1, 6-i):
+        print(' ', end='')
+    for j in range(1, i):
+        print(1, end='*')
+    print('\n')
 
 
 
