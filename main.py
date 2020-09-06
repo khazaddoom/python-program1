@@ -51,6 +51,32 @@
 #
 # print(time.localtime())
 
+import time
+
+
+class User:
+    def __init__(self, firstname, lastname):
+        self.fName = firstname
+        self.lName = lastname
+
+    def greet(self, timeOfTheDay):
+        print('Hello {0} {1}, Good {2}!'.format(self.fName, self.lName, timeOfTheDay))
+
+
+class Customer(User):
+    def __init__(self, fName, lName, projectName):
+        self.fName = fName
+        self.lName = lName
+        self.project = projectName
+
+    def sayHello(self):
+        print('Hello {0}, {1}. Thanks for your {2} project.'.format(self.fName, self.lName, self.project))
+
+
+brett = Customer('Brett', 'Cohen', 'TicTac Shake 2.0')
+brett.sayHello()
+
+
 
 
 
